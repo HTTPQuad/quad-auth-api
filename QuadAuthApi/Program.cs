@@ -1,7 +1,7 @@
 ﻿var builder = WebApplication.CreateBuilder(args);
 
 // Add services
-builder.Services.AddControllers(); // 👈 Add this
+builder.Services.AddControllers(); 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -19,6 +19,6 @@ app.UseSwaggerUI(c =>
 
 // Enable routing & controller support
 app.UseRouting();
-app.MapControllers(); // 👈 Map attribute-routed controllers
+app.MapControllers(); 
 
 app.Run();
